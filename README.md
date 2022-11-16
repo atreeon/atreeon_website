@@ -1,5 +1,13 @@
 # Atreeon Website
 
+## Editing Html / Css / etc
+I prefer IntelliJ Idea for coding over VSCode however Idea doesn't format my html / css / js so can't really be used for 
+website editing.
+
+Open project in both.
+ - Any git actions, moving files around etc then use Idea
+ - Any html / css / js use VSCode
+
 ## Run Locally
 `npm start`
 
