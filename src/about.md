@@ -4,10 +4,6 @@ layout: layouts/page.njk
 
 ## About this site
 
-Here you can write some details about you and your new blog: 
+You can contact me at <a href="mailto:atreeonhill@gmail.com">Adrian</a>
 
-- 🎉 I love blogging
-- 💥 I built this site using [Eleventy](https://www.11ty.dev/) on [Glitch](https://glitch.com/)
-- 🌈 Thanks for reading!
-
-You can also make your project available for other people to remix in Glitch! 🎏✨
+I live in Brighton, I'm a software engineer and am passionate about air quality.
