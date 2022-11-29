@@ -9,7 +9,7 @@ layout: layouts/post.njk
 # Flutter's TextField and TextFormField Events
 
 ## Intro
-`TextField` and `TextFormField` have a number of events that fire when you the user does something on the front end.  Here I'll explain each and what they do.
+`TextField` and `TextFormField` have a number of events that fire when the user does interacts.  Here I'll explain each event and what they do.
 
 ## `TextField`
 ### `onChanged`
@@ -21,7 +21,7 @@ Is triggered when a user presses carriage return on a website or presses the 'do
 ### `onEditingComplete`
 Same as `onSubmitted` but the value isn't available to the user.
 
-<iframe src="https://dartpad.dev/embed-inline.html?id=55b83253540890dad410349224e30736"></iframe>
+<https://dartpad.dev/?id=55b83253540890dad410349224e30736>
 
 ## `TextFormField`
 ### `onSaved`
@@ -36,7 +36,7 @@ Same as `onChanged` in a TextField
 ### `onEditingComplete`
 Same as `onEditingComplete` in a TextField
 
-<iframe src="https://dartpad.dev/embed-inline.html?id=9bcb0ebec0c01142fc7e530c46f94e56"></iframe>
+[dartpad](https://dartpad.dev/?id=9bcb0ebec0c01142fc7e530c46f94e56")
 
 More info:
-https://stackoverflow.com/questions/63690311/flutter-textfield-difference-between-onedittingcomplete-and-onsubmitted
+<https://stackoverflow.com/questions/63690311/flutter-textfield-difference-between-onedittingcomplete-and-onsubmitted>
