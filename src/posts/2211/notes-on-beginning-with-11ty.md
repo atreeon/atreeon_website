@@ -22,6 +22,9 @@ stop and start at the terminal
 ##### If you install any new packages
 stop and start at the terminal
 
+##### This is a good tutorial (and includes CNAME kerfuffle)
+https://www.justus.ws/tech/deploying-eleventy-to-github-pages/
+
 
 
 
