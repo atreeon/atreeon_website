@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your new 11ty blog" />
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Flutter&apos;s TextField and TextFormField Events - atreeon</title>
+
+<meta name="description" content="Adrian&apos;s (atreeon) website">
+<meta name="robots" content="index,follow">
+<meta name="author" content="undefined">
+
+<link rel="canonical" href="atreeon.com/posts/2211/Flutters_TextField_and_TextFormField_events/">
+
+<meta property="og:title" content="Flutter&apos;s TextField and TextFormField Events - atreeon">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="atreeon.com/posts/2211/Flutters_TextField_and_TextFormField_events/">
+<meta property="og:description" content="Adrian&apos;s (atreeon) website">
+<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="atreeon.com/posts/2211/Flutters_TextField_and_TextFormField_events/">
+<meta name="twitter:title" content="Flutter&apos;s TextField and TextFormField Events - atreeon">
+<meta name="twitter:description" content="Adrian&apos;s (atreeon) website">
+<meta name="twitter:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
+
+
+  </head>
+  <body>
+  <main>
+    
+    
+  
+    
+
+
+<div class="wrapper post">
+  <div>
+    
+    <h1 class='postTitle'>Flutter&#39;s TextField and TextFormField Events</h1>
+
+    
+    
+    
+    <h1>Flutter's TextField and TextFormField Events</h1>
+<h2>Intro</h2>
+<p><code>TextField</code> and <code>TextFormField</code> have a number of events that fire when you the user does something on the front end.  Here I'll explain each and what they do.</p>
+<h2><code>TextField</code></h2>
+<h3><code>onChanged</code></h3>
+<p>When the text inside the textbox is changed at all by the user.  The event fires after any small change without losing focus.</p>
+<h3><code>onSubmitted</code></h3>
+<p>Is triggered when a user presses carriage return on a website or presses the 'done' box on a mobile (or find, search etc)</p>
+<h3><code>onEditingComplete</code></h3>
+<p>Same as <code>onSubmitted</code> but the value isn't available to the user.</p>
+<iframe src="https://dartpad.dev/embed-inline.html?id=55b83253540890dad410349224e30736"></iframe>
+<h2><code>TextFormField</code></h2>
+<h3><code>onSaved</code></h3>
+<p>The code inside the <code>onSaved</code> event is called when the form specified in the <code>TextFormField</code> is saved.  This happens by calling _<code>formKey.currentState!.save()</code> and usually happens on a button press at the bottom of a form.</p>
+<h3><code>onFieldSubmitted</code></h3>
+<p>Same as <code>onSubmitted</code> in a TextField</p>
+<h3><code>onChanged</code></h3>
+<p>Same as <code>onChanged</code> in a TextField</p>
+<h3><code>onEditingComplete</code></h3>
+<p>Same as <code>onEditingComplete</code> in a TextField</p>
+<iframe src="https://dartpad.dev/embed-inline.html?id=9bcb0ebec0c01142fc7e530c46f94e56"></iframe>
+<p>More info:
+https://stackoverflow.com/questions/63690311/flutter-textfield-difference-between-onedittingcomplete-and-onsubmitted</p>
+
+    <div class="controls">
+    
+    
+      <p>
+        <strong>Previous post</strong>: 
+        <a class="previous" href="/posts/2211/starting-with-11ty/">Starting Out With Eleventy (11ty) CRM &amp; Why Duplication Sucks</a>
+      </p>
+    
+    
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+        <div class="links">
+          <a href="/">Home</a>
+          <span class="divider">|</span>
+          <a href="/posts">Posts</a>
+          <span class="divider">|</span>
+          <a href="/about">About</a>
+        </div>
+<!--         <a class="btn--remix" target="_top" href="https://glitch.com/edit/#!/remix/glitch-hello-eleventy">
+        <img src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140" alt="" /> 
+        Remix on Glitch
+        </a> -->
+      </footer>
+    
+  </main>
+   
+  </body>
+</html>
