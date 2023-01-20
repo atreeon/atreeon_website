@@ -3,16 +3,18 @@
   "version": "0.1.0",
   "description": "A simple blog, set up with Eleventy.",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "node -e \"console.log('hello')\" && eleventy --serve",
     "build": "NODE_ENV=production eleventy --pathprefix '/'"
   },
   "dependencies": {
     "eleventy-plugin-seo": "0.5.2",
     "luxon": "^3.0.1",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "copyfiles": "^2.4.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "copyfiles": "^2.4.1"
   },
   "engines": {
     "node": "12"

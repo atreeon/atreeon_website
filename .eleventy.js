@@ -26,8 +26,10 @@ module.exports = function(eleventyConfig) {
   ]);
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addPassthroughCopy("CNAME");
-
-    /* From: https://github.com/artstorm/eleventy-plugin-seo
+  eleventyConfig.addPassthroughCopy("flutter_packages");
+//  eleventyConfig.addPassthroughCopy("_src/assets");
+//    "postbuild": "ls && cp -R flutter_packages build"
+  /* From: https://github.com/artstorm/eleventy-plugin-seo
   
   Adds SEO settings to the top of all pages
   The "glitch-default" bit allows someone to set the url in seo.json while
@@ -68,7 +70,8 @@ module.exports = function(eleventyConfig) {
     // EDIT HERE WITH THE CODE FROM THE NEXT STEPS PAGE TO REVERSE CHRONOLOGICAL ORDER
     // (inspired by https://github.com/11ty/eleventy/issues/898#issuecomment-581738415)
     const coll = collection
-      .getFilteredByTag("posts");
+      .getFilteredByTag("posts")
+      .sort((a, b) => b.data.date - a.data.date);
 
     // From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426 
     // Adds {{ prevPost.url }} {{ prevPost.data.title }}, etc, to our njks templates
