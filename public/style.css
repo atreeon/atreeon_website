@@ -86,9 +86,25 @@ to this section's matching END comment to see page-specific styles.
   background-color: #fff;
 }
 
+.links {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.leftRight {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+  margin-right: 2rem;
+}
+
 .links img {
-  position: absolute;
+  /*position: absolute;*/
+  /*flex-basis: 100%;*/
   right: 0;
+  float: right;
   margin-right: 5rem;
 }
 
