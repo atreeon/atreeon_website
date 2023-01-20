@@ -9,25 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Your new 11ty blog" />
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
-    <title>atreeon</title>
+    <title>Eleventy - Adding Flutter Standalone App to Eleventy Website - atreeon</title>
 
 <meta name="description" content="Adrian&apos;s (atreeon) website">
 <meta name="robots" content="index,follow">
 <meta name="author" content="undefined">
 
-<link rel="canonical" href="atreeon.com/posts/">
+<link rel="canonical" href="atreeon.com/posts/2301/add-flutter-to-11ty/">
 
-<meta property="og:title" content="atreeon">
+<meta property="og:title" content="Eleventy - Adding Flutter Standalone App to Eleventy Website - atreeon">
 <meta property="og:type" content="article">
 
-<meta property="og:url" content="atreeon.com/posts/">
+<meta property="og:url" content="atreeon.com/posts/2301/add-flutter-to-11ty/">
 <meta property="og:description" content="Adrian&apos;s (atreeon) website">
 <meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="atreeon.com/posts/">
-<meta name="twitter:title" content="atreeon">
+<meta name="twitter:url" content="atreeon.com/posts/2301/add-flutter-to-11ty/">
+<meta name="twitter:title" content="Eleventy - Adding Flutter Standalone App to Eleventy Website - atreeon">
 <meta name="twitter:description" content="Adrian&apos;s (atreeon) website">
 <meta name="twitter:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
 
@@ -40,12 +40,34 @@
     
 
 
-<div class="wrapper home">
-  <div class="content">
-    <h2>Posts</h2>
-<p>Thoughts (some early, unfiltered and unmoderated), information, beliefs, technology, air quality musings.</p>
+<div class="wrapper post">
+  <div>
+    
+    <h1 class='postTitle'>Eleventy - Adding Flutter Standalone App to Eleventy Website</h1>
 
-    <ul><li>2023-01-13 — <a href='/posts/2301/add-flutter-to-11ty/'>Eleventy - Adding Flutter Standalone App to Eleventy Website</a></li><li>2022-11-28 — <a href='/posts/2211/Flutters_TextField_and_TextFormField_events/'>Flutter&#39;s TextField and TextFormField Events</a></li><li>2022-11-14 — <a href='/posts/2211/notes-on-beginning-with-11ty/'>Eleventy - Notes On Starting Out</a></li><li>2022-11-14 — <a href='/posts/2211/starting-with-11ty/'>Starting Out With Eleventy (11ty) CRM &amp; Why Duplication Sucks</a></li></ul>
+    
+    
+    
+    <h3>Build flutter app and set the base-href environment variable</h3>
+<p><code>flutter build web --base-href /flutter_packages/</code></p>
+<h3>Copy over the flutter built web code to the root directory of Eleventy site</h3>
+<h3>Add the following line in .eleventy.js to copy the files over</h3>
+<p><code>eleventyConfig.addPassthroughCopy(&quot;flutter_packages&quot;);</code></p>
+<h3>Be aware</h3>
+<p>Ensure the flutter code is in the root directory</p>
+<p>definitely not the 'src' because 11ty tries to process it there &amp; copy it over...it mangles it into 11ty form which is not what we want.</p>
+<p>nor in the build directory because everything gets overwritten in there.</p>
+
+    <div class="controls">
+    
+    
+    
+      <p>
+        <strong>Next post</strong>: 
+        <a class="next" href="/posts/2211/Flutters_TextField_and_TextFormField_events/">Flutter&#39;s TextField and TextFormField Events</a>
+      </p>
+    
+    </div>
   </div>
 </div>
 
