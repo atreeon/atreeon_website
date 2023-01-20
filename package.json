@@ -9,12 +9,10 @@
   "dependencies": {
     "eleventy-plugin-seo": "0.5.2",
     "luxon": "^3.0.1",
-    "moment": "^2.29.4",
-    "copyfiles": "^2.4.1"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "copyfiles": "^2.4.1"
+    "@11ty/eleventy": "^1.0.2"
   },
   "engines": {
     "node": "12"
