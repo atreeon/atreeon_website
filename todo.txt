@@ -1,1 +1,4 @@
 style the website a bit better
+have a hidden sub page for my blog posts
+have a hidden sub page for AQ stuff
+make the front end look more professional and a bit better styled
