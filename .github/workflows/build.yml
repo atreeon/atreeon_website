@@ -26,11 +26,6 @@ jobs:
           npm ci
           npm run build
 
-      #copy code
-      - name: Copy static
-        run: |
-          copyfiles -f
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
