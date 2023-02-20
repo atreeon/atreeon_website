@@ -1,6 +1,7 @@
 ---
 title: Starting Out With Eleventy (11ty) CRM & Why Duplication Sucks
 date: 2022-11-14
+summary: none
 tags:
   - posts
 layout: layouts/post.njk
