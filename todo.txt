@@ -1,4 +1,6 @@
 style the website a bit better
+    poss this https://www.giorgiopretto.com/about/
+        https://bitbucket.org/psylok/giorgiopretto/src/master/
 have a hidden sub page for my blog posts
 have a hidden sub page for AQ stuff
 make the front end look more professional and a bit better styled
