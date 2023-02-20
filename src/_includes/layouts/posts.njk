@@ -11,13 +11,14 @@ templateClass: tmpl-home
     <ul>
       {%- for post in collections.posts -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
-          <div class="atreeon-post"><span class="atreeon-post-date">{{ post.data.page.date | htmlDateString2 }}</span>
-          —
-              <a href='{{ post.url }}'>
-                <span class="atreeon-post-title">{{ post.data.title }}</span>
-              </a>
+          <div class="atreeon-post">
+            <span class="atreeon-post-date">{{ post.data.page.date | htmlDateString2 }}</span>
+            —
+            <a href='{{ post.url }}'>
+              <span class="atreeon-post-title">{{ post.data.title }}</span>
+            </a>
+            <div class="atreeon-post-summary">{{ post.data.summary | summary }}</div>
           </div>
-          <div class="atreeon-post-summary">{{ post.data.summary | summary }}</div>
         </li>
       {%- endfor -%}
 
