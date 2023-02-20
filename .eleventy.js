@@ -51,6 +51,11 @@ module.exports = function(eleventyConfig) {
     return dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'short', year: 'numeric' })
   })
 
+//  //Summary or first 75 chars (could be used as a summary)
+//  eleventyConfig.addFilter("summaryOrFirst75Chars", function(summary, fullText) {
+//    return summary.length > 0 ? summary : fulltext.slice(0,75);
+//  })
+
   //example using moment
   eleventyConfig.addFilter("moment", dateObj => {
     return moment(dateObj).format('MMMM Do YYYY, h:mm:ss a');

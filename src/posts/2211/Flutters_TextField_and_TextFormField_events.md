@@ -1,6 +1,8 @@
 ---
 title: Flutter's TextField and TextFormField Events
 date: 2022-11-28
+id: 1234
+summary: Discussion of the different TextField & TextFormField events such as onChanged, onSubmitted, onEditingComplete, onSaved, onFieldSubmitted.
 tags:
   - posts
   - flutter
