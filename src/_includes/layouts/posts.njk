@@ -10,7 +10,7 @@ templateClass: tmpl-home
     {{ content | safe }}
     <ul>
       {%- for post in collections.posts -%}
-        <li{% if page.url == post.url %} aria-current="page"{% endif %}><div class="11ty-post"><span class="11ty-post-date">{{ post.data.page.date | htmlDateString2 }}</span — <a href='{{ post.url }}'><span class="11ty-post-title">{{ post.data.title }}</span></a></div></li>
+        <li{% if page.url == post.url %} aria-current="page"{% endif %}><div class="11ty-post"><span class="11ty-post-date">{{ post.data.page.date | htmlDateString2 }}</span> — <a href='{{ post.url }}'><span class="11ty-post-title">{{ post.data.title }}</span></a></div></li>
       {%- endfor -%}
     </ul>
   </div>
