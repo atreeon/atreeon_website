@@ -1,7 +1,7 @@
 ---
 title: Eleventy - Notes On Starting Out
 date: 2022-11-14
-summary: none
+summary: no summary
 tags:
   - posts
 layout: layouts/post.njk

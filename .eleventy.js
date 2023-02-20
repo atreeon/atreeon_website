@@ -57,6 +57,11 @@ module.exports = function(eleventyConfig) {
 //  })
 
   //example using moment
+  eleventyConfig.addFilter("summary", summaryText => {
+    return summaryText.length > 15 ? summaryText : "" ;
+  });
+
+  //example using moment
   eleventyConfig.addFilter("moment", dateObj => {
     return moment(dateObj).format('MMMM Do YYYY, h:mm:ss a');
   });

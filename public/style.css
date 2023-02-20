@@ -130,6 +130,15 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
+
+.atreeon-post-summary {
+  padding: 0 1rem;
+  color: #573;
+}
+
+
+
+
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/

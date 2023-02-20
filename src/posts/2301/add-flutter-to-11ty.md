@@ -1,7 +1,7 @@
 ---
 title: Eleventy - Adding Flutter Standalone App to Eleventy Website
 date: 2023-01-13
-summary: none
+summary: no summary
 tags:
   - posts
 layout: layouts/post.njk
